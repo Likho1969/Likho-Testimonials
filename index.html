@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>My Testimonials</h1>
+    </header>
+
+    <!-- Testimonial one -->
+    <div class="owl-carousel">
+      <div class="container person1">
+        <div class="image">
+          <img
+            src="./images/Dababy_BabyOnBaby.jpg"
+            alt=""
+            style="width: 90px"
+          />
+        </div>
+        <h2 class="heading2">Mpendulo Khoza</h2>
+        <h3 class="heading3">-Software Engineer-</h3>
+        <q class="qoute"
+          >He is a hard worker when it comes to his work. He is determine,
+          passionate and focused, no distraction nor issues can derail him.
+          Ultimately, he's got high self-esteem but also self-driven.
+        </q>
+      </div>
+
+      <!-- Testimonial two -->
+      <div class="container person2">
+        <div class="image">
+          <img src="./images/floyd.jpeg" alt="" style="width: 90px" />
+        </div>
+        <h2 class="heading2">Lihle Buka</h2>
+        <h3 class="heading3">-Front Developer-</h3>
+        <q class="qoute"
+          >He is a quiet soul who solely focuses on his work. His level of
+          concentration and focus still never ceases to amaze me simply because
+          of his immaculate discipline. I would also add to say he is
+          fundamentally self-driven.</q
+        >
+      </div>
+
+      <!-- Testimonial three -->
+      <div class="container person3">
+        <div class="image">
+          <img src="./images/thando.jpeg" alt="" style="width: 90px" />
+        </div>
+        <h2 class="heading2">Thandokazi Nkohla</h2>
+        <h3 class="heading3">-Full Stack Developer-</h3>
+        <q class="qoute"
+          >Assisting others is one of his best characteristics. Leadership
+          skills is also the characteristic. Determination describes him best,
+          but also passion. He's all the time keen to learn. However he's always
+          ready for a challenge. Challenges are what keep him going. In addition
+          high self-esteem, disciplined with high morals.</q
+        >
+      </div>
+    </div>
+
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              margin: 0,
+              stagePadding: 0,
+            },
+          },
+          500: {
+            margin: 10,
+            stagePadding: 10,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
